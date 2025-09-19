@@ -23,3 +23,4 @@ class Strong_Number {
         }
     }
 }
+
