@@ -1,0 +1,17 @@
+class Solution {
+    public int findFinalValue(int[] nums, int original) {
+        HashSet<Integer> set = new HashSet<>();
+        
+        // Add all nums into the set for fast lookup
+        for (int num : nums) {
+            set.add(num);
+        }
+        
+        // Repeat the process
+        while (set.contains(original)) {
+            original *= 2;
+        }
+        
+        return original;
+    }
+}
